@@ -90,7 +90,7 @@ public class Officer {
 
         try {
             Connection conexion = MySQLConnection.get();
-            String query = "DELETE from officer WHERE id=?";
+            String query = "DELETE FROM officer WHERE id = ?";
             PreparedStatement statement = conexion.prepareStatement(query);
             statement.setInt(1, id );
             statement.execute();
